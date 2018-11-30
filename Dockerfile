@@ -6,6 +6,7 @@ RUN apt-get update && \
   apt-get install -fyqq && \
   apt-get clean
 COPY init.sh /init.sh
+RUN chmod +x /init.sh
 ENV PUID=1000 PGID=1000
 
 CMD ["/init.sh", "/usr/bin/mega-cmd-server"]
