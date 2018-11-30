@@ -17,6 +17,9 @@
 2. Exec into the container to config the server
     ```
     docker exec -it megacmd bash
+    /# su - d_user
+    ~$ mega-login <account-email> <password>
+    ~$ mega-sync <localpath> <dstremotepath>
     ```
 
 ## Tags
