@@ -12,12 +12,11 @@
         -v <folder_to_sync_outside>:<folder_to_sync_inside> \
         -e PUID=<exec_user_id> \
         -e PGID=<exec_group_id> \
-        melsonlai/megacmd
+        melsonlai/docker-megacmd:<tag>
     ```
 2. Exec into the container to config the server
     ```
-    docker exec -it megacmd bash
-    /# su - d_user
+    docker exec -it megacmd su - d_user
     ~$ mega-login <account-email> <password>
     ~$ mega-sync <localpath> <dstremotepath>
     ```
