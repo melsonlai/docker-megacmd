@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -fsSL 'https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megacmd-xUbuntu_18.04_amd64.deb' -o 'megacmd-xUbuntu_18.04_amd64.deb'
