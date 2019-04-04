@@ -1,5 +1,7 @@
 FROM resin/rpi-raspbian:stretch
 
+COPY qemu-arm-static /usr/bin/
+
 ADD https://mega.nz/linux/MEGAsync/Raspbian_9.0/arm/megacmd-Raspbian_9.0_armhf.deb /root/
 RUN apt-get update && \
   (dpkg -i /root/megacmd-Raspbian_9.0_armhf.deb; exit 0;) && \

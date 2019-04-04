@@ -1,0 +1,6 @@
+#!/bin/bash
+
+QEMU_VER='v3.1.0-2'
+
+curl -fsSL https://github.com/multiarch/qemu-user-static/releases/download/${QEMU_VER}/qemu-arm-static -o qemu-arm-static
+chmod a+x qemu-arm-static
