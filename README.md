@@ -24,4 +24,4 @@
 ## Tags
 
 + amd64: amd64 arch based on `ubuntu:18.04`
-+ arm: arm arch based on `resin/rpi-raspbian:stretch`
++ arm: arm arch based on `balenalib/rpi-debian:stretch-run`
