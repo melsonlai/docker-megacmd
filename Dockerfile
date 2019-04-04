@@ -1,6 +1,9 @@
 FROM ubuntu:18.04
 
+LABEL maintainer="melsonlai"
+
 ENV PUID=1000 PGID=1000
+VOLUME ["/home/d_user"]
 
 COPY init.sh /init.sh
 RUN chmod +x /init.sh
