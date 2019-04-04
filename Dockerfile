@@ -1,6 +1,9 @@
 FROM balenalib/rpi-debian:stretch-run
 
+LABEL maintainer="melsonlai"
+
 ENV PUID=1000 PGID=1000
+VOLUME ["/home/d_user"]
 COPY qemu-arm-static /usr/bin/
 
 COPY init.sh /init.sh
