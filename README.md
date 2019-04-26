@@ -23,6 +23,14 @@
 
 ## Tags
 
-+ latest: multiarch manifest with `amd64` and `arm`
-+ amd64: amd64 arch based on `ubuntu:18.04`
-+ arm: arm arch based on `balenalib/rpi-debian:stretch-run`
+- `latest`: multiarch manifest list with `amd64` and `arm`
+- `amd64`: amd64 arch based on `ubuntu:18.04`
+- `arm`: arm arch based on `balenalib/rpi-debian:stretch-run`
+
+## Credits
+
+- <https://github.com/meganz/MEGAcmd>
+
+## Licenses
+
+- <https://raw.githubusercontent.com/meganz/MEGAcmd/master/LICENSE>
