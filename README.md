@@ -23,7 +23,6 @@
 
 ## Tags
 
-- `latest`: multiarch manifest list with `amd64` and `arm`
 - `amd64`: amd64 arch based on `ubuntu:18.04`
 - `arm`: arm arch based on `balenalib/rpi-debian:stretch-run`
 
