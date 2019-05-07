@@ -2,15 +2,14 @@ FROM ubuntu:18.04
 
 LABEL maintainer="melsonlai"
 
-ENV PUID=1000 PGID=1000 MY_DOCKER_USERNAME="" MY_DOCKER_PASSWORD=""
+ENV PUID=1000 PGID=1000
 VOLUME ["/home/d_user"]
 
 COPY init.sh /init.sh
 RUN chmod +x /init.sh
 
 COPY megacmd-xUbuntu_18.04_amd64.deb /root/
-RUN [ -z "${MY_DOCKER_USERNAME}" -a -z "${MY_DOCKER_PASSWORD}" ] && \
-  apt-get update && \
+RUN apt-get update && \
   apt-get install -yqq gnupg2 && \
   (dpkg -i --path-include='/usr/share/doc/megacmd/*' /root/megacmd-xUbuntu_18.04_amd64.deb; exit 0;) && \
   apt-get install -fyqq && \
