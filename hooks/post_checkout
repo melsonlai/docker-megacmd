@@ -5,4 +5,4 @@ QEMU_VER='v3.1.0-2'
 curl -fsSL "https://github.com/multiarch/qemu-user-static/releases/download/${QEMU_VER}/qemu-arm-static" -o "qemu-arm-static"
 chmod a+x qemu-arm-static
 
-curl -fsSL "https://mega.nz/linux/MEGAsync/Raspbian_9.0/arm/megacmd-Raspbian_9.0_armhf.deb" -o "megacmd-Raspbian_9.0_armhf.deb"
+curl -fsSL "https://mega.nz/linux/MEGAsync/Raspbian_9.0/armhf/megacmd-Raspbian_9.0_armhf.deb" -o "megacmd-Raspbian_9.0_armhf.deb"
